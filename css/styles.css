@@ -1,0 +1,205 @@
+body{
+    margin:0;
+    padding:0;
+}
+.h-primary{
+    padding: 32px;
+}
+
+/* NAVIGATION AND LOGO */
+
+.logo{
+    height:107px;
+    width: 107px;
+    margin: 5px;
+}
+
+#navbar{
+    display: flex;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: #999;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.navItems{
+    display: flex;
+    list-style: none;
+    position: absolute;
+    right: 44px;
+    top: 25px;
+}
+
+.item{
+    text-align: left;
+    padding:0 20px;
+}
+
+.item a{
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    color: #444;
+}
+.item a:hover{
+    background-color: #888;
+    color: #fff;
+}
+
+/* SECTION HOME */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    
+}
+
+#home::before{
+    content: "";
+    background: url('../img/img1.jpeg') no-repeat center center/cover;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 1108px;
+    width:100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+/* SECTION ABOUT ME */
+#about-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    margin-top: 305px;
+    margin-bottom: -46px;
+    
+}
+#about-me h1{
+    color:#000;
+    font-size: 1.5rem;
+}
+
+#about-me p{
+    margin: 3px auto;
+    color: #000;
+}
+
+
+
+/* SECTION SERVICES_CONTAINER */
+#services-container{
+    margin-top: 11px;
+    margin-bottom: 32px;
+}
+
+.center{
+    text-align: center;
+}
+
+#services{
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid #330;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 23px;
+    background: #fff;
+}
+
+.box-images{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+
+
+/* SECTION CLIENT-SECTION */
+#client-section .h-primary{
+    padding-top: 101px;
+}
+#client-section{ 
+    position: relative;
+}
+
+#client-section::before{
+ content: "";
+ position: absolute;
+ background: url(../img/myclientbg.jpg)no-repeat center center/cover;
+ bottom: -20px;
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+ opacity: 0.3;
+}
+
+
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+
+/* SECTION CONTACT */
+#contact{
+    text-align: center;
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url(../img/pexels-david-sun-955081.jpg)no-repeat center center/cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#contact h1{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#contact-box{
+    padding: 20px;
+    padding-bottom: 35px;
+}
+
+.form-group{
+    padding: 3px;
+    width: 508px;
+    margin: 11px auto;
+    border-radius: 9px;
+}
+
+#contact-box textarea{
+    padding-right: 6px;
+}
+
+
+/* FOOTER */
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
